@@ -21,7 +21,7 @@ function ampwpm_settings_init(  ) {
   register_setting( 'pluginPage', 'ampwpm_settings' );
   add_settings_section(
     'ampwpm_pluginPage_section', 
-    __( '<a href="http://mercury.postlight.com/">Learn More About How Postlight is Helping With Amp</a>', 'wordpress' ), 
+    __( '<a href="http://mercury.postlight.com/">Learn More About How Postlight is Helping With AMP</a>', 'wordpress' ), 
     'ampwpm_settings_section_callback', 
     'pluginPage'
   );
