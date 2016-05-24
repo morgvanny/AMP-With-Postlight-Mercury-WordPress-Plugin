@@ -2,6 +2,7 @@
 Contributors: morgvanny
 Tags: AMP
 Tested up to: 4.5.2
+Stable tag: trunk
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 
