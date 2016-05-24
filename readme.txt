@@ -5,6 +5,10 @@ Tested up to: 4.5.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 
+Let Postlight provide an AMP solution for you, using their tool, Mercury!
+
+== Description ==
+
 This plugin adds some code to your page headers, letting Postlight provide an AMP solution for you, using their tool, Mercury. Find out how they do this here http://mercury.postlight.com/
 
 == Installation ==
