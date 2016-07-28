@@ -3,7 +3,7 @@
  * Plugin Name: AMP With Postlight Mercury
  * Plugin URI: https://morgvanny.com
  * Description: This plugin adds some code to your page headers, letting Postlight provide an AMP solution for you, using their tool, Mercury.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Morgan VanYperen
  * Author URI: https://morgvanny.com
  * License: GPLv3
@@ -61,17 +61,11 @@ function ampwpm_options_page(  ) {
 if ( get_option( 'ampwpm_settings' )['ampwpm_checkbox_field_0'] == 1 ) {
   add_action( 'wp_head', 'my_mercury_tag' );
   
-  function curPageURL() {
-    $pageURL = 'http';
-    if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
-    $pageURL .= "://";
-    $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-    return $pageURL;
-  }
-
   function my_mercury_tag() {
-    ?>
-    <link rel="amphtml" href="http://mercury.postlight.com/amp?url=<?php echo curPageURL(); ?>">
-    <?php
+    if( is_single() ) {
+      ?>
+      <link rel="amphtml" href="https://mercury.postlight.com/amp?url=<?php echo urlencode(get_the_permalink()); ?>">
+      <?php
+    }
   }
 }
