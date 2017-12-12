@@ -1,7 +1,7 @@
 === AMP With Postlight Mercury ===
 Contributors: morgvanny
 Tags: AMP, mobile, seo, free, speed
-Tested up to: 4.5.3
+Tested up to: 4.9.1
 Stable tag: 1.1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
